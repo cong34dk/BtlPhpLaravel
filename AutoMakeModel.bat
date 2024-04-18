@@ -1,0 +1,9 @@
+php artisan make:model Users  -m
+php artisan make:model Products  -m
+php artisan make:model Categories -m
+php artisan make:model Orders -m
+php artisan make:model Order_Items -m
+php artisan make:model Comments -m
+php artisan make:model Slides -m
+php artisan make:model Admins -m
+php artisan make:model Order_Infos -m
