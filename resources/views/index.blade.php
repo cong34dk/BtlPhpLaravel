@@ -359,201 +359,51 @@
                 <h2>Khuyến mãi hot</h2>
             </div>
             <div class="list-products">
-                <div class="list-item">
-                    <div class="list-item-img">
-                        <a href="./iPhone14Pro.html"><img src="/assets/userspage/img/hot-promotion/iphone.webp"
-                                alt=""></a>
-                        <div class="list-item-label">
-                            <span class="badge badge-pay">Trả góp 0%</span>
-                            <span class="badge badge-sale">Giảm 5.500.000đ</span>
-                        </div>
-                    </div>
-                    <div class="list-item-info">
-                        <h3><a href="./iPhone14Pro.html" title="iPhone 14 Pro 128GB"
-                                class="list-item-info__name">iPhone
-                                14 Pro 128GB</a>
-                        </h3>
-                        <div class="list-item-info__price">
-                            <div class="list-item-info__price__current-price">
-                                25.490.000 <span>đ</span>
-                                <div class="current-price__bar">
-
-                                </div>
-                            </div>
-                            <div class="list-item-info__price__initial-price">
-                                <strike>
-                                    30.990.000 <span>đ</span>
-                                </strike>
-                                <div class="time-remaining">
-                                    1 ngày 05:00:07
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item-info__voucher">
-                            <div class="list-item-info__voucher__img">
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/PMH.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/moca.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/tpbank.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/kredivo.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="list-item-info__voucher__text">Giảm đến 1 triệu khi mở thẻ TPBANK EVO</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-img">
-                        <a href=""><img src="/assets/userspage/img/hot-promotion/samsung-galaxy-s23-ultra.webp"
-                                alt=""></a>
-                        <div class="list-item-label">
-                            <span class="badge badge-pay">Trả góp 0%</span>
-                            <span class="badge badge-sale">Giảm 5.000.000đ</span>
-                        </div>
-                    </div>
-                    <div class="list-item-info">
-                        <h3><a href="#" title="Samsung Galaxy S23 Ultra 5G 256GB"
-                                class="list-item-info__name">Samsung
-                                Galaxy S23 Ultra 5G 256GB</a></h3>
-                        <div class="list-item-info__price">
-                            <div class="list-item-info__price__current-price">
-                                26.990.000 <span>đ</span>
-                                <div class="current-price__bar">
-
-                                </div>
-                            </div>
-                            <div class="list-item-info__price__initial-price">
-                                <strike>
-                                    31.990.000 <span>đ</span>
-                                </strike>
-                                <div class="time-remaining">
-                                    1 ngày 05:00:07
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item-info__voucher">
-                            <div class="list-item-info__voucher__img">
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/PMH.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/moca.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/tpbank.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/kredivo.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="list-item-info__voucher__text">Giảm 3% tối đa 250.000đ qua Grab Moca</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-img">
-                        <a href=""><img src="/assets/userspage/img/hot-promotion/xiaomi-redmi.webp"
-                                alt=""></a>
-                        <div class="list-item-label">
-                            <span class="badge badge-pay">Trả góp 0%</span>
-                            <span class="badge badge-sale">Giảm 700.000đ</span>
-                        </div>
-                    </div>
-                    <div class="list-item-info">
-                        <h3><a href="#" title="Xiaomi Redmi 10 2022 4GB-128GB"
-                                class="list-item-info__name">Xiaomi Redmi
-                                10 2022 4GB-128GB</a></h3>
-                        <div class="list-item-info__price">
-                            <div class="list-item-info__price__current-price">
-                                3.590.000 <span>đ</span>
-                                <div class="current-price__bar">
-
-                                </div>
-                            </div>
-                            <div class="list-item-info__price__initial-price">
-                                <strike>
-                                    4.290.000 <span>đ</span>
-                                </strike>
-                                <div class="time-remaining">
-                                    1 ngày 05:00:07
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item-info__voucher">
-                            <div class="list-item-info__voucher__img">
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/PMH.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/moca.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/tpbank.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/kredivo.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="list-item-info__voucher__text">Giảm đến 1 triệu khi mở thẻ TPBANK EVO</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="list-item">
-                    <div class="list-item-img">
-                        <a href=""><img src="/assets/userspage/img/hot-promotion/xiaomi-redmi-12c-dd.webp"
-                                alt=""></a>
-                        <div class="list-item-label">
-                            <span class="badge badge-pay">Trả góp 0%</span>
-                            <span class="badge badge-sale">Giảm 400.000đ</span>
-                        </div>
-                    </div>
-                    <div class="list-item-info">
-                        <h3><a href="#" title="Xiaomi Redmi 12C 4GB - 64GB" class="list-item-info__name">Xiaomi
-                                Redmi
-                                12C 4GB - 64GB</a></h3>
-                        <div class="list-item-info__price">
-                            <div class="list-item-info__price__current-price">
-                                3.190.000 <span>đ</span>
-                                <div class="current-price__bar">
-
-                                </div>
-                            </div>
-                            <div class="list-item-info__price__initial-price">
-                                <strike>
-                                    3.590.000 <span>đ</span>
-                                </strike>
-                                <div class="time-remaining">
-                                    1 ngày 05:00:07
-                                </div>
-                            </div>
-                        </div>
-                        <div class="list-item-info__voucher">
-                            <div class="list-item-info__voucher__img">
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/PMH.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/moca.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/tpbank.webp" alt="">
-                                </div>
-                                <div class="icon-wrapper">
-                                    <img src="/assets/userspage/img/voucher-icon/kredivo.webp" alt="">
-                                </div>
-                            </div>
-                            <div class="list-item-info__voucher__text">Giảm đến 1 triệu khi mở thẻ TPBANK EVO</div>
-                        </div>
-                    </div>
-                </div>
-
+    @foreach ($products as $product)
+    <div class="list-item">
+        <div class="list-item-img">
+            <a href="/products/{{ $product->id }}"><img src="{{ $product->image }}" alt=""></a>
+            <div class="list-item-label">
+                <span class="badge badge-pay">Trả góp 0%</span>
+                <span class="badge badge-sale">Giảm {{ number_format($product->discount, 0, ',', '.') }}đ</span>
             </div>
+        </div>
+        <div class="list-item-info">
+            <h3><a href="/products/{{ $product->id }}" title="{{ $product->name }}" class="list-item-info__name">{{ $product->name }}</a></h3>
+            <div class="list-item-info__price">
+                <div class="list-item-info__price__current-price">
+                    {{ number_format(intval($product->price - $product->discount), 0, ',', '.') }} <span>đ</span>
+                    <div class="current-price__bar"></div>
+                </div>
+                <div class="list-item-info__price__initial-price">
+                    <strike>{{ number_format(intval($product->price), 0, ',', '.') }} <span>đ</span></strike>
+                    <div class="time-remaining">1 ngày 05:00:07</div>
+                </div>
+            </div>
+            <div class="list-item-info__voucher">
+                <!-- Your voucher info here -->
+                <div class="list-item-info__voucher__img">
+                    <div class="icon-wrapper">
+                        <img src="./assets/userspage/img/voucher-icon/PMH.webp" alt="">
+                    </div>
+                    <div class="icon-wrapper">
+                        <img src="./assets/userspage/img/voucher-icon/moca.webp" alt="">
+                    </div>
+                    <div class="icon-wrapper">
+                        <img src="./assets/userspage/img/voucher-icon/tpbank.webp" alt="">
+                    </div>
+                    <div class="icon-wrapper">
+                        <img src="./assets/userspage/img/voucher-icon/kredivo.webp" alt="">
+                    </div>
+                </div>
+                <div class="list-item-info__voucher__text">{{ $product->description }}</div>
+            </div>
+        </div>
+    </div>
+    @endforeach
+</div>
+
+            
         </div>
         <!-- end hot-promotion__container -->
         <div class="banner-sale">

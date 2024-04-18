@@ -17,8 +17,8 @@ return new class extends Migration
             $table->bigIncrements('product_id');
             $table->string('name');
             $table->text('description')->nullable();
-            $table->decimal('price', 8, 2); //Giá gốc
-            $table->decimal('discounted_price', 8, 2); //Giá cuối cùng
+            $table->decimal('price', 10, 2); //Giá gốc
+            $table->decimal('discount', 10, 2)->nullable(); //Giá giảm 
             $table->string('image')->nullable();
             $table->bigInteger('category_id')->unsigned();
             $table->timestamp('created_at')->useCurrent();
