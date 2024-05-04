@@ -40,7 +40,7 @@ class CartController extends Controller
 
         $pdf = Pdf::loadView('admin.carts.downloadInvoice', compact('customer', 'carts'));
 
-        return $pdf->stream('Invoice.pdf');
+        return $pdf->stream($customer->id .' Hóa Đơn.pdf');
     }
 
     public function destroy(Request $request){
