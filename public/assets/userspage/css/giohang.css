@@ -1,195 +1,125 @@
-/* cart__wrapper */
-.cart__wrapper {
-  width: 776px;
-  margin: 0 auto;
+.input-width-60-percent {
+    width: 60%;
 }
 
-.link-wrapper {
-  font-size: 14px;
-  margin-top: 10px;
-}
-.link-wrapper a {
-  color: #0664f9;
-}
-
-/* card */
-.card {
-  display: block;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(10, 10, 10, 0.15);
-  background: #fff;
-  overflow: hidden;
-  position: relative;
-  border-radius: 6px;
+.flex-w {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.card-title {
-  box-shadow: inset 0 -1px 0 0 #edeeef;
-  font-weight: bold;
-  padding: 10px 24px;
-  color: #212529;
-  margin-bottom: 0;
-  box-shadow: inset 0 -1px 0 0 #edeeef;
-  font-weight: 500;
-  padding: 10px 24px;
-  color: #212529;
-  margin-bottom: 0;
-  font-size: 24px;
+.flex-m {
+    display: flex;
+    align-items: center;
 }
 
-.card-body {
-  position: relative;
-  padding-top: 16px;
-}
-.card-body__product {
-  padding: 16px 24px;
-  box-shadow: inset 0 -1px 0 0 #edeeef;
-}
-.product-cart {
-  display: flex;
-  width: 100%;
-  font-size: 14px;
-  line-height: 20px;
-}
-.product-cart__img {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 8px;
-  margin-right: 8px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-.product-cart__img img {
-  vertical-align: middle;
-  /* max-width: 100%; */
-  height: 100%;
-  /* width: 100%; */
-
-  margin-right: 28px;
-}
-.product-cart__info {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
-}
-.product-cart__inside {
-  flex: 1;
-}
-.product-cart__line {
-  display: flex;
-  margin-bottom: 8px;
-}
-.product-cart__name {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: bold;
-  color: #32373d;
-}
-.select-color {
-  width: 98px;
-  height: 27px;
-  border-radius: 4px;
-  border: solid 1px #cbd1d6;
-  transition: all 0.3s ease;
+.stext-104 {
+    /* Điều chỉnh kích thước và padding của input */
+    font-size: 1rem;
+    padding: 0.5rem;
 }
 
-.select-sale {
-  height: 27px;
-  border: solid 1px #cbd1d6;
-}
-
-.list-promotion li {
-  margin-bottom: 4px;
-  color: #6a737a;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-}
-.list-promotion li {
-  list-style-type: disc !important;
-  display: list-item;
-}
-
-.product-cart__quality {
-  flex-basis: 94px;
-  margin-left: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-self: baseline;
-}
-.product-cart__quality__wrap {
-  display: inline-flex;
-  justify-content: center;
-  margin-bottom: 8px;
-}
-
-.btn-disabled {
-  /* pointer-events: none; */
-  background: #f8f9fa;
-  color: #939ca3;
-}
-
-.btn-quality {
-  width: 28px;
-  height: 28px;
-  padding: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: solid 1px #e1e4e6;
-  border-radius: 0;
-  background: #fff;
-  outline: none;
-  font-size: 14px;
-  color: #444b52;
-  cursor: pointer;
-}
-.show-quantity {
-  border-top: solid 1px #e1e4e6;
-  border-bottom: solid 1px #e1e4e6;
-  border-right: none;
-  border-left: none;
-  border-radius: 0;
-  width: 38px;
-  text-align: center;
-  outline: none;
-  appearance: none;
-}
-.product-cart__remove{
-    font-size: 14px;
-    color: #000;
-    text-align: center;
-    cursor: pointer;
-    transition: all .4s ease;
-}
-.product-cart__price{
-    flex-basis: 182px;
-    text-align: right;
-    padding-left: 8px;
-    color: red;
+.stext-101 {
+    /* Điều chỉnh kiểu chữ và kích thước của nút */
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 20px;
-    height: 56px;
-}
-.product-cart__price p{
-    display: inline;
-    text-decoration: underline;
 }
 
-.product-cart__price .order-btn{
-  margin-top: 180px;
-  width: 150px;
-  height: 30px;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  background: #cb1c22;
-  outline: none;
-  border-radius: 6px;
-  cursor: pointer;
-  border: none;
+.bor13 {
+    /* Điều chỉnh viền bo tròn của input */
+    border-radius: 0.75rem;
+}
+
+.bg8 {
+    /* Điều chỉnh màu nền của nút */
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+/* Định dạng phần cart totals */
+.bor10 {
+    border-radius: 0.625rem;
+    border: 1px solid #e5e5e5;
+}
+
+.mtext-109 {
+    /* Điều chỉnh kiểu chữ và kích thước của tiêu đề Cart Totals */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.mtext-101 {
+    /* Điều chỉnh kiểu chữ và kích thước của số tiền total */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.size-208 {
+    /* Điều chỉnh độ rộng của phần tổng tiền */
+    width: 25%;
+}
+
+.size-209 {
+    /* Điều chỉnh độ rộng của số tiền total */
+    width: 75%;
+}
+
+/* Định dạng phần thông tin khách hàng */
+.stext-112 {
+    /* Điều chỉnh kiểu chữ và kích thước của tiêu đề thông tin khách hàng */
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.bor8 {
+    /* Điều chỉnh viền bo tròn của input */
+    border-radius: 0.5rem;
+}
+
+.bg0 {
+    /* Điều chỉnh màu nền của input */
+    background-color: #f9f9f9;
+}
+
+.plh3 {
+    /* Điều chỉnh padding và margin của input */
+    padding: 0.375rem;
+    margin: 0.375rem;
+}
+
+.cl8 {
+    /* Điều chỉnh màu chữ của input */
+    color: #333;
+}
+
+/* Định dạng nút Đặt Hàng */
+.size-116 {
+    /* Điều chỉnh kích thước của nút */
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+}
+
+.bg3 {
+    /* Điều chỉnh màu nền của nút */
+    background-color: #ff5722;
+    color: #fff;
+}
+
+.bor14 {
+    /* Điều chỉnh viền bo tròn của nút */
+    border-radius: 0.875rem;
+}
+
+/* Hiệu ứng hover cho nút */
+.hov-btn3:hover {
+    cursor: pointer;
+}
+
+/* Định dạng ô input 100% */
+.size-100 {
+    width: 100%;
 }

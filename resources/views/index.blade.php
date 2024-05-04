@@ -138,15 +138,16 @@
     <main class="main-wrapper">
         <section class="section-banner color-main">
             <div class="banner-left">
-                <div class="banner-left-slide">
-                    <img id="image" src="/assets/userspage/img/banner-left/1.webp" alt="">
-                    <div class="control">
-                        <button class="btn-prev btn" onclick="previousImage()"><i
-                                class="fa-sharp fa-solid fa-arrow-left"></i></button>
-                        <button class="btn-next btn" onclick="nextImage()"><i
-                                class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                    <div class="banner-left-slide">
+                        <img class="slide-image" src="{{ $slides}}" alt="">
+                        <div class="control">
+                            <button class="btn-prev btn" onclick="previousImage()"><i
+                                    class="fa-sharp fa-solid fa-arrow-left"></i></button>
+                            <button class="btn-next btn" onclick="nextImage()"><i
+                                    class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        </div>
                     </div>
-                </div>
+
 
                 <div class="banner-left-description">
                     <div class="banner-left-description-items">
@@ -359,51 +360,56 @@
                 <h2>Khuyến mãi hot</h2>
             </div>
             <div class="list-products">
-    @foreach ($products as $product)
-    <div class="list-item">
-        <div class="list-item-img">
-            <a href="/products/{{ $product->id }}"><img src="{{ $product->image }}" alt=""></a>
-            <div class="list-item-label">
-                <span class="badge badge-pay">Trả góp 0%</span>
-                <span class="badge badge-sale">Giảm {{ number_format($product->discount, 0, ',', '.') }}đ</span>
+                @foreach ($products as $product)
+                    <div class="list-item">
+                        <div class="list-item-img">
+                            <a href="/products/{{ $product->id }}"><img src="{{ $product->image }}"
+                                    alt=""></a>
+                            <div class="list-item-label">
+                                <span class="badge badge-pay">Trả góp 0%</span>
+                                <span class="badge badge-sale">Giảm
+                                    {{ number_format($product->discount, 0, ',', '.') }}đ</span>
+                            </div>
+                        </div>
+                        <div class="list-item-info">
+                            <h3><a href="/products/{{ $product->id }}" title="{{ $product->name }}"
+                                    class="list-item-info__name">{{ $product->name }}</a></h3>
+                            <div class="list-item-info__price">
+                                <div class="list-item-info__price__current-price">
+                                    {{ number_format(intval($product->price - $product->discount), 0, ',', '.') }}
+                                    <span>đ</span>
+                                    <div class="current-price__bar"></div>
+                                </div>
+                                <div class="list-item-info__price__initial-price">
+                                    <strike>{{ number_format(intval($product->price), 0, ',', '.') }}
+                                        <span>đ</span></strike>
+                                    <div class="time-remaining">1 ngày 05:00:07</div>
+                                </div>
+                            </div>
+                            <div class="list-item-info__voucher">
+                                <!-- Your voucher info here -->
+                                <div class="list-item-info__voucher__img">
+                                    <div class="icon-wrapper">
+                                        <img src="./assets/userspage/img/voucher-icon/PMH.webp" alt="">
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <img src="./assets/userspage/img/voucher-icon/moca.webp" alt="">
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <img src="./assets/userspage/img/voucher-icon/tpbank.webp" alt="">
+                                    </div>
+                                    <div class="icon-wrapper">
+                                        <img src="./assets/userspage/img/voucher-icon/kredivo.webp" alt="">
+                                    </div>
+                                </div>
+                                <div class="list-item-info__voucher__text">{{ $product->description }}</div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div>
-        </div>
-        <div class="list-item-info">
-            <h3><a href="/products/{{ $product->id }}" title="{{ $product->name }}" class="list-item-info__name">{{ $product->name }}</a></h3>
-            <div class="list-item-info__price">
-                <div class="list-item-info__price__current-price">
-                    {{ number_format(intval($product->price - $product->discount), 0, ',', '.') }} <span>đ</span>
-                    <div class="current-price__bar"></div>
-                </div>
-                <div class="list-item-info__price__initial-price">
-                    <strike>{{ number_format(intval($product->price), 0, ',', '.') }} <span>đ</span></strike>
-                    <div class="time-remaining">1 ngày 05:00:07</div>
-                </div>
-            </div>
-            <div class="list-item-info__voucher">
-                <!-- Your voucher info here -->
-                <div class="list-item-info__voucher__img">
-                    <div class="icon-wrapper">
-                        <img src="./assets/userspage/img/voucher-icon/PMH.webp" alt="">
-                    </div>
-                    <div class="icon-wrapper">
-                        <img src="./assets/userspage/img/voucher-icon/moca.webp" alt="">
-                    </div>
-                    <div class="icon-wrapper">
-                        <img src="./assets/userspage/img/voucher-icon/tpbank.webp" alt="">
-                    </div>
-                    <div class="icon-wrapper">
-                        <img src="./assets/userspage/img/voucher-icon/kredivo.webp" alt="">
-                    </div>
-                </div>
-                <div class="list-item-info__voucher__text">{{ $product->description }}</div>
-            </div>
-        </div>
-    </div>
-    @endforeach
-</div>
 
-            
+
         </div>
         <!-- end hot-promotion__container -->
         <div class="banner-sale">
@@ -690,6 +696,7 @@
         <!-- end product-container -->
     </main>
     <!-- end main-wrapper -->
+    <!-- footer -->
     <footer class="footer">
         <div class="footer-top center-wrapper">
             <div class="footer-top__wrapper">
@@ -848,9 +855,43 @@
     <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger intent="WELCOME" chat-title="BotChat-FPTSHOP" agent-id="acfaf76d-c766-4daf-831f-9bb3ab08d046"
         language-code="vi"></df-messenger>
-        
+
     <!-- link Javascript -->
     <script src="{{ asset('assets/userspage/JS/main.js') }}"></script>
+
+    <script>
+        var slides = <?php echo json_encode($slides); ?>;
+        var currentSlideIndex = 0;
+        var imageElements = document.querySelectorAll('.slide-image');
+    
+        function showSlide(index) {
+            if (index < 0) {
+                index = slides.length - 1;
+            } else if (index >= slides.length) {
+                index = 0;
+            }
+            for (var i = 0; i < imageElements.length; i++) {
+                imageElements[i].src = slides[index].image;
+            }
+            currentSlideIndex = index;
+        }
+    
+        function nextImage() {
+            currentSlideIndex++;
+            showSlide(currentSlideIndex);
+        }
+    
+        function previousImage() {
+            currentSlideIndex--;
+            showSlide(currentSlideIndex);
+        }
+    
+        // Tự động chuyển slide sau mỗi 3 giây
+        setInterval(function() {
+            nextImage();
+        }, 3000);
+    </script>
+    
 </body>
 
 </html>

@@ -12,24 +12,18 @@ class Products extends Model
     protected $fillable = [
         'name',
         'description',
+        'content',
+        'menu_id',
         'price',
-        'discount',
-        'image',
-        'category_id',
+        'price_sale',
+        'thumb',
+        'active'
+  
     ];
 
-    public function category()
+    public function menu()
     {
-        return $this->belongsTo(Categories::class);
-    }
-
-    public function comments()
-    {
-        return $this->hasMany(Comments::class);
-    }
-
-    public function orderItems()
-    {
-        return $this->hasMany(Order_Items::class);
+        return $this->hasOne(Menus::class, 'id', 'menu_id')
+            ->withDefault(['name' => '']);
     }
 }
