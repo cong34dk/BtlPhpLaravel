@@ -140,7 +140,7 @@
                                 <th class="text-center">Tên sản phẩm</th>
                                 <th class="text-center">Giá</th>
                                 <th class="text-center">Số lượng</th>
-                                <th class="text-end">Tổng tiền</th>
+                                <th class="text-end">Thành tiền</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -168,7 +168,7 @@
                 </div>
             </div>
             <div class="card-footer bg-white">
-                <p class="mb-0">Thành tiền: {{ number_format($total, 0, '', '.') }} đ</p>
+                <p class="mb-0">Tổng tiền: {{ number_format($total, 0, '', '.') }} đ</p>
             </div>
         </div>
     </div>
