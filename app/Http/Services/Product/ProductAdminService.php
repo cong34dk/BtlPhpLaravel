@@ -55,7 +55,7 @@ class ProductAdminService
     public function get()
     {
         return Products::with('menu')
-            ->orderByDesc('id')->paginate(15);
+            ->orderByDesc('id')->paginate(4);
 
     }
 

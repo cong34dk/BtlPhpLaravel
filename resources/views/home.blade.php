@@ -4,16 +4,15 @@
 <main class="main-wrapper">
     <section class="section-banner color-main">
         <div class="banner-left">
-            {{-- Để xem sau --}}
-                {{-- <div class="banner-left-slide">
-                    <img class="slide-image" src="{{ $slides}}" alt="">
-                    <div class="control">
-                        <button class="btn-prev btn" onclick="previousImage()"><i
-                                class="fa-sharp fa-solid fa-arrow-left"></i></button>
-                        <button class="btn-next btn" onclick="nextImage()"><i
-                                class="fa-sharp fa-solid fa-arrow-right"></i></button>
-                    </div>
-                </div> --}}
+            <div class="banner-left-slide">
+                <img id="image-home" src="/assets/userspage/img/banner-left/1.webp" alt="">
+                <div class="control">
+                    <button class="btn-prev btn" onclick="previousImage()"><i
+                            class="fa-sharp fa-solid fa-arrow-left"></i></button>
+                    <button class="btn-next btn" onclick="nextImage()"><i
+                            class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                </div>
+            </div>
 
 
             <div class="banner-left-description">
@@ -277,7 +276,7 @@
             @endforeach
         </div>
 
-
+        {!! $products->links() !!}
     </div>
     <!-- end hot-promotion__container -->
     <div class="banner-sale">

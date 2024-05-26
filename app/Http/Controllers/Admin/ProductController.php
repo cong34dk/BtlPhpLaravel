@@ -7,6 +7,8 @@ use App\Http\Requests\Product\ProductRequest;
 use App\Http\Services\Product\ProductAdminService;
 use App\Models\Products;
 use Illuminate\Http\Request;
+use App\Exports\ProductsExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProductController extends Controller
 {
@@ -75,5 +77,8 @@ class ProductController extends Controller
         }
 
         return response()->json([ 'error' => true ]);
+    }
+    public function export(){
+        return Excel::download(new ProductsExport, 'products.xlsx');
     }
 }

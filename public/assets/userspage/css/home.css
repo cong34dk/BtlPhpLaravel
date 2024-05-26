@@ -428,13 +428,14 @@ tr {
 
 /* hot-promotion__container */
 .hot-promotion__container {
+  margin-bottom: 90px;
   height: 541px;
   background-color: #fff;
   padding: 15px 0 10px 0;
   border-radius: 6px;
   -webkit-box-shadow: 0 0 3px 0 #dee2e6;
   box-shadow: 0 0 3px 0 #dee2e6;
-  overflow: auto;
+  /* overflow: auto; */
 }
 .hot-promotion__container .title {
   width: 100%;

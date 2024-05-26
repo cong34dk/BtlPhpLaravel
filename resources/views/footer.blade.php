@@ -161,36 +161,3 @@
 
     <!-- link Javascript -->
     <script src="{{ asset('assets/userspage/JS/main.js') }}"></script>
-
-    {{-- <script>
-        var slides = <?php echo json_encode($slides); ?>;
-        var currentSlideIndex = 0;
-        var imageElements = document.querySelectorAll('.slide-image');
-
-        function showSlide(index) {
-            if (index < 0) {
-                index = slides.length - 1;
-            } else if (index >= slides.length) {
-                index = 0;
-            }
-            for (var i = 0; i < imageElements.length; i++) {
-                imageElements[i].src = slides[index].image;
-            }
-            currentSlideIndex = index;
-        }
-
-        function nextImage() {
-            currentSlideIndex++;
-            showSlide(currentSlideIndex);
-        }
-
-        function previousImage() {
-            currentSlideIndex--;
-            showSlide(currentSlideIndex);
-        }
-
-        // Tự động chuyển slide sau mỗi 3 giây
-        setInterval(function() {
-            nextImage();
-        }, 3000);
-    </script> --}}

@@ -38,11 +38,16 @@
             @endforeach
         </tbody>
     </table>
+    <div class="card-footer clearfix">
+        <button class="btn btn-outline-primary text-dark" style="">
+            <a href="{{ route('export')}}">Export Excel</a>
+        </button>
+    </div>
 
     <div class="card-footer clearfix">
-
+        
         {{-- liên kết phân trang --}}
-        {{-- {!! $products->links() !!} --}}
+        {!! $products->links() !!}
     </div>
 @endsection
 

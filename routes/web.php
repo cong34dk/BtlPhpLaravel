@@ -46,6 +46,7 @@ Route::middleware(['auth'])->group(function (){
                 Route::get('edit/{product}', [ProductController::class, 'show']);
                 Route::post('edit/{product}', [ProductController::class, 'update']);
                 Route::DELETE('destroy', [ProductController::class, 'destroy']);
+                Route::get('export', [ProductController::class, 'export'])->name('export');
             });
 
             #Upload
@@ -56,6 +57,16 @@ Route::middleware(['auth'])->group(function (){
             Route::get('customers/view/{customer}', [\App\Http\Controllers\Admin\CartController::class, 'show']);
             Route::DELETE('customers/destroy', [\App\Http\Controllers\Admin\CartController::class, 'destroy']);
             Route::get('customers/download/invoice/{customer}', [\App\Http\Controllers\Admin\CartController::class, 'downloadInvoice']);
+
+            //Menu
+            Route::prefix('menus')->group(function (){
+            Route::get('add', [\App\Http\Controllers\Admin\MenuController::class, 'create']);
+            Route::post('add', [\App\Http\Controllers\Admin\MenuController::class, 'store']);
+            Route::get('list', [\App\Http\Controllers\Admin\MenuController::class, 'index']);
+            Route::get('edit/{menu}', [\App\Http\Controllers\Admin\MenuController::class, 'show']);
+            Route::post('edit/{menu}', [\App\Http\Controllers\Admin\MenuController::class, 'update']);
+            Route::delete('destroy', [\App\Http\Controllers\Admin\MenuController::class, 'destroy']);
+        });
 
     });
 });
